@@ -1,0 +1,7 @@
+在命令行窗口输入
+save('yolov2_lyy_smalldata_trained_model.mat','detector');
+
+就能将训练的部分储存在路径下的.mat格式的文件中，这个文件可以放到LYYCD软件当中进行读取并训练测试
+
+分析网络结构
+analyzeNetwork(detector.Network)

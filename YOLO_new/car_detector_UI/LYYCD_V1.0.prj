@@ -1,0 +1,109 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="4287953263" file="E:\毕业设计程序\VehicleDetection\car_detector_UI\LYYCD_V1.0.prj" location="E:\毕业设计程序\VehicleDetection\car_detector_UI" name="LYYCD_V1.0" target="target.mlapps" target-name="打包为 App">
+    <param.appname>LYYCD_V1.0</param.appname>
+    <param.authnamewatermark>厉彦一</param.authnamewatermark>
+    <param.email>LiYanyi19981104@163.com</param.email>
+    <param.company>SDUST&amp;TJU</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>LYYCD车辆检测系统</param.summary>
+    <param.description>LYYCD是通过深度学习方法进行车辆目标检测的小程序软件，能够加载不同的训练模型实现多种图像和视频格式的数据流中的车辆目标的自动化检测。</param.description>
+    <param.screenshot>C:\Users\dell\AppData\Local\Temp\tp43843f63_9e7a_4c76_91c3_6d8c8952163a.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}\MatlabAppInstall</param.output>
+    <param.guid>ae0fbf39-ec0a-47cd-923c-bb3c6c15c98b</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\carDetector.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\icon1.png</file>
+      <file>${PROJECT_ROOT}\models.png</file>
+      <file>${PROJECT_ROOT}\MyImage2.jpg</file>
+      <file>${PROJECT_ROOT}\pictures.png</file>
+      <file>${PROJECT_ROOT}\transcoded_video.avi</file>
+      <file>${PROJECT_ROOT}\video.png</file>
+      <file>${PROJECT_ROOT}\yolov2_mytrain.mat</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="MatlabAppInstall" optional="false">E:\毕业设计程序\VehicleDetection\car_detector_UI\MatlabAppInstall</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Matlab2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

@@ -138,7 +138,14 @@ I = imread(testDataTbl.imageFilename{4});
 I = imresize(I,inputSize(1:2));
 [bboxes,scores] = detect(detector,I);
 
-I = insertObjectAnnotation(I,'rectangle',bboxes,scores);
+%这里做了修改，防止score为空使函数insertObjectAnnotation()报错
+if scores==[]
+    LYYscores="50";
+else
+    LYYscores=scores;
+end
+
+I = insertObjectAnnotation(I,'rectangle',bboxes,LYYscores);
 figure
 imshow(I)
 %%

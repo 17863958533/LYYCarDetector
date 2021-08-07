@@ -1,12 +1,12 @@
-clear
+clear 
 clc
 
 % load('yolov2_bdd100k_8val.mat','detector')
 % load('RCNN_lyy_smalldata_trained_model.mat', 'detector')
-load('imagenet-googlenet-dag.mat', 'detector')
+load('F:\毕业设计程序\MyCarDetection\others\小数据量训练得到的模型\yolov2InceptionResnetv2_lyy_smalldata_trained_model.mat', 'detector')
 
-
-inputSize = [448 448 3];
+%这里注意，需要根据网络进行调整
+inputSize = [299 299 3];
 
 % 弹出文件选择框，选择一张图片
 [file,path] = uigetfile({'*.jpg;*.jpeg;*.png;*.bmp;*.tif',...
